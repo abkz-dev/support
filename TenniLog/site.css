@@ -77,6 +77,11 @@ nav a {
 
 nav a:hover { color: var(--green); }
 
+nav .language-link {
+  padding-left: 18px;
+  border-left: 1px solid rgb(255 255 255 / 0.28);
+}
+
 .hero {
   padding: 90px 0 74px;
   border-bottom: 1px solid var(--line);
@@ -209,6 +214,7 @@ h1 {
   .wrap { width: min(100% - 28px, 960px); }
   .header-inner { align-items: flex-start; flex-direction: column; padding: 16px 0; }
   nav { justify-content: flex-start; }
+  nav .language-link { padding-left: 0; border-left: 0; }
   .hero { padding: 60px 0 52px; }
   .content { padding: 36px 0 72px; }
 }
