@@ -357,3 +357,46 @@ th {
   .content { padding: 32px 0 72px; }
   th, td { padding: 8px 10px; font-size: 14px; }
 }
+
+/* Language picker */
+.language-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 14px;
+  max-width: 620px;
+  margin-top: 32px;
+}
+
+.language-card {
+  display: block;
+  padding: 20px 22px;
+  color: #fff;
+  background: rgb(255 255 255 / 0.1);
+  border: 1px solid rgb(255 255 255 / 0.3);
+  border-radius: 14px;
+  text-decoration: none;
+  transition: background .15s, border-color .15s;
+}
+
+.language-card:hover {
+  background: rgb(255 255 255 / 0.18);
+  border-color: var(--lime);
+}
+
+.language-card strong {
+  display: block;
+  color: var(--lime);
+  font-size: 20px;
+}
+
+.language-card span {
+  display: block;
+  margin-top: 4px;
+  color: #d8e7d3;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+/* Keep the footer at the bottom on short pages */
+body { display: flex; flex-direction: column; min-height: 100vh; }
+main { flex: 1; }
